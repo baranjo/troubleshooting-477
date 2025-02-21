@@ -1,0 +1,11 @@
+footer {
+  font-size:  min(var(--footer-height), var(--small-font), 6vw);
+  height: var(--footer-height);
+  width: 100%;
+  background-color: var(--footer-background-color);
+  
+  padding-left: var(--document-padding);
+  padding-right: var(--document-padding);
+  color: var(--footer-font-color);
+  margin-top: var(--white-space);
+}

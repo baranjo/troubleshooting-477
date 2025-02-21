@@ -1,0 +1,91 @@
+/* Style the content */
+main {
+  min-height: var(--content-height);
+  background-color: var(--content-background-color);
+  font-size: var(--medium-font);
+  padding-left: var(--document-padding);
+  padding-right: var(--document-padding);
+  color: var(--content-font-color);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+
+.half-column {
+  float: left;
+  width: 50.00%;
+  padding: 1vmin;
+  max-height: var(--max-row-height);
+
+}
+
+.half-column > a > img,
+.half-column > img {
+  width:100%;
+  border-width: 3px;
+  border-color: var(--navbar-background-color);
+  border-style: outset;
+  height: var(--max-row-height);
+  object-fit: cover;  /* Other options exists too*/
+  
+}
+
+.half-column > p {
+  max-height: var(--max-row-height);
+  overflow-y: auto;
+  margin: 0px;
+  height: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  display: flex;
+  align-items: center;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media (max-width: 650px) {
+  
+main {
+    max-height:none;
+    max-width: 100%;
+    min-height: var(--content-height);
+  }
+
+  .row {
+    display: inline-block;
+    align-items: center;
+  }
+
+
+  .half-column {
+    width: 100%;
+    max-height: none
+    padding-top:  var(--document-padding);
+    padding-bottom: var(--document-padding);
+  }
+
+
+  .half-column > p {
+    max-height: none;
+    width: 100%;
+  }
+
+  .half-column > a > img,
+  .half-column > img {
+    height: 100%;
+
+
+  }
+
+}
+
+
+
+

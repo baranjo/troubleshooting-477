@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dr. Ghassemi's Piano</title>
+	<link rel="stylesheet" href="static/piano/css/piano.css">
+	<link rel="stylesheet" href="static/main/css/content.css">
+</head>
+<body>
+  <article>
+    <header>
+    	<img src="static/main/images/banner.jpg" alt="Arizona">
+    </header>
+    
+    <!-- The navigation bar -->
+    <nav>
+        <input type="checkbox" id="nav-check">
+        <div class="logo">
+            <p>CSE 477 - Homework 1</p>
+        </div>
+        <div class="menu">
+            <label for="nav-check"><img src="static/main/images/menu-bar.png"></label>
+        </div>
+
+        <div class="links">
+            <a href="home.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="static/main/documents/ghassemi_cv.pdf">Resume</a>
+            <a href="https://www.linkedin.com/in/mohammad-ghassemi-401a843"><img src="static/main/images/social-linkedin.png"><span class="imgtext">LinkedIn</span></a>
+        </div>
+    </nav>
+
+
+    <main>
+
+    	  <div class="space"></div>
+ 		  <p class="x-center small-txt"><i> Behold piano great and old, 
+ 		  	     it's master slumbers in far off cold,
+ 		  	     If you wish to see anew,
+ 		  	     call out to it - we see you.</i></p>
+
+    	  <div class="space"><hr></div>
+	      <p style="display: none" class="nowplaying"></p>	      
+	      <div class="imageWrapper">
+	      	  <img class="bgimg" src="static/piano/images/texture.jpeg" />
+	      	  <div class="bkgdc"></div>
+		      <p id="message"> The Great Old One</p>
+			  <div class="keys">
+		        <div id="65" data-key="65" class="key" note="C"><span class="hints">A</span></div>
+		        <div id="87" data-key="87" class="key sharp" note="C#"><span class="hints">W</span></div>
+		        <div id="83" data-key="83" class="key" note="D"><span class="hints">S</span></div>
+		        <div id="83" data-key="69" class="key sharp" note="D#"><span class="hints">E</span></div>
+		        <div id="83" data-key="68" class="key" note="E"><span class="hints">D</span></div>
+		        <div id="83" data-key="70" class="key" note="F"><span class="hints">F</span></div>
+		        <div id="83" data-key="84" class="key sharp" note="F#"><span class="hints">T</span></div>
+		        <div id="83" data-key="71" class="key" note="G"><span class="hints">G</span></div>
+		        <div id="83" data-key="89" class="key sharp" note="G#"><span class="hints">Y</span></div>
+		        <div id="83" data-key="72" class="key" note="A"><span class="hints">H</span></div>
+		        <div id="83" data-key="85" class="key sharp" note="A#"><span class="hints">U</span></div>
+		        <div id="83" data-key="74" class="key" note="B"><span class="hints">J</span></div>
+		        <div id="83" data-key="75" class="key" note="C"><span class="hints">K</span></div>
+		        <div id="83" data-key="79" class="key sharp" note="C#"><span class="hints">O</span></div>
+		        <div id="83" data-key="76" class="key" note="D"><span class="hints">L</span></div>
+		        <div id="83" data-key="80" class="key sharp" note="D#"><span class="hints">P</span></div>
+		        <div id="83" data-key="186" class="key" note="E"><span class="hints">;</span></div>
+			  </div>
+		   </div>
+	</main>
+      <!-- The footer of the file -->
+      <footer class="x-center y-center">
+        <p>© 2022 Mohammad M. Ghassemi</p>
+    </footer>
+<!--   <video playsinline autoplay muted loop id="bgvid" poster="http://carolinegabriel.com/demo/js-keyboard/video/bg.jpg">
+      <source src="http://carolinegabriel.com/demo/js-keyboard/video/bg.mp4" type="video/mp4">
+  </video> -->
+  <script src="static/piano/js/piano.js"></script>
+  </body>
+</article>
+</html>

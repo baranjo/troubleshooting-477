@@ -1,0 +1,25 @@
+/* Style the content */
+header {
+  font-size:  min(var(--header-height), var(--small-font));
+  max-height: var(--header-height);
+  min-height: var(--header-height);
+  overflow: hidden;
+  background-color: var(--header-background-color);
+  color: var(--header-font-color);
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+header > img{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+
+
+}
+
+header > p{
+position:absolute;
+overflow: auto;
+}
